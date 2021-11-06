@@ -1,0 +1,48 @@
+body{
+    font-family: "Arial", sans-serif;
+    background-color:greenyellow;
+}
+
+section{
+    text-align: center;
+}
+
+.game--title{
+    font-size: 70px;
+    color:#333333;
+    
+}
+ /* making a 3*3 grid so making sure of the grid column template with property 3 and repeating it.
+ It splits the contained cells into 3 column and the cell automatically set their width.*/
+.game--container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 306px;
+    margin: 50px auto;
+}
+
+.cell{
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 2px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.game--restart{
+    padding: 10px 25px;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: black;
+    background-color: burlywood;
+    border-radius: 8px;
+    border: 2px solid #333333;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.game--restart:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
